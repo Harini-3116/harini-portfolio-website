@@ -192,11 +192,14 @@ img { max-width: 100%; }
   border-radius: 8px;
   transition: color var(--transition), background var(--transition);
 }
-.nav-links a:hover { 
-  .nav-links a{
-font-weight:600;
+.nav-links a {
+  font-weight: 600;
 }
-color: var(--blue); background: var(--blue-dim); }
+
+.nav-links a:hover {
+  color: var(--blue);
+  background: var(--blue-dim);
+}
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
   background: none; border: none; cursor: pointer; padding: 4px;
@@ -463,6 +466,8 @@ section {
   border: 2px solid transparent;
   background: linear-gradient(135deg, var(--aws-orange), var(--blue)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   animation: ringRotate 6s linear infinite;
@@ -1007,4 +1012,10 @@ footer {
 }
 @media (max-width: 400px) {
   .concepts-grid { grid-template-columns: 1fr; }
+}
+/* Project Screenshots */
+.project-screenshot {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
 }
